@@ -1,0 +1,17 @@
+
+.aboutMe {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    width: 600px;
+
+}
+p{
+    font-size: 20px;
+}
+.Home{
+    vertical-align: bottom;
+}
+.Segment{
+    vertical-align: bottom;
+}
