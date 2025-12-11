@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+  /* Colors */
+  --bg-primary: #050510;
+  --bg-secondary: #10101b;
+  --bg-card: rgba(20, 20, 35, 0.6);
+  
+  --accent-primary: #00f3ff;   /* Neon Cyan */
+  --accent-secondary: #bd00ff; /* Neon Purple */
+  --accent-glow: rgba(0, 243, 255, 0.5);
+
+  --text-main: #ffffff;
+  --text-muted: #a0a0b0;
+
+  /* Spacing & Layout */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 32px;
+
+  /* Shadow & Blur */
+  --shadow-card: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --backdrop-blur: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--text-main);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  border-color: transparent;
+  box-shadow: 0 0 20px var(--accent-glow);
+  transform: translateY(-2px);
+}

@@ -1,0 +1,49 @@
+#root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    isolation: isolate;
+}
+
+/* Background Ambient Glows */
+#root::before,
+#root::after {
+    content: '';
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(100px);
+    opacity: 0.15;
+    animation: float 20s infinite alternate ease-in-out;
+}
+
+#root::before {
+    top: -10vw;
+    left: -10vw;
+    background: var(--accent-primary);
+}
+
+#root::after {
+    bottom: -10vw;
+    right: -10vw;
+    background: var(--accent-secondary);
+    animation-delay: -10s;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(100px, 50px) scale(1.1);
+    }
+
+    100% {
+        transform: translate(-50px, 100px) scale(0.9);
+    }
+}

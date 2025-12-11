@@ -1,15 +1,14 @@
 import './App.css'
-import AboutMe from './features/homePage/aboutMe/aboutMe'
-import Images from "./features/imagePage/images.jsx";
-import Links from "./features/linkPage/Links.jsx";
+import {RouterProvider} from "react-router";
+import Router from "./features/Routers/Main_R.jsx";
+
 
 function App() {
 
+
   return (
     <>
-        <AboutMe/>
-        <Images width="50%" height="600px"/>
-        <Links/>
+        <RouterProvider router={Router}/>
     </>
   )
 }

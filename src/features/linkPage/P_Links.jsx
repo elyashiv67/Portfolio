@@ -1,15 +1,19 @@
-import React from 'react';
-import {useNavigate} from "react-router-dom";
 
-function Links() {
-    const navigate = useNavigate();
+import { ArrowOutward } from '@mui/icons-material';
+import './P_Links.css';
+
+function P_Links() {
     return (
-        <div>
-            <a href={"https://github.com/elyashiv67"} target={"_blank"}>git hub</a>
-            <br/>
-            <button onClick={()=>navigate("/")}>go back</button>
+        <div className="links-container">
+            <h1 className="links-title gradient-text">Connect</h1>
+            <div className="links-list">
+                <div className="link-card" onClick={() => window.open("https://github.com/elyashiv67", "_blank")}>
+                    <span>GitHub</span>
+                    <ArrowOutward className="link-icon" />
+                </div>
+            </div>
         </div>
     );
 }
 
-export default Links;
+export default P_Links;

@@ -1,17 +1,33 @@
+.about-container {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-.aboutMe {
-    display: inline-block;
-    border: 1px solid black;
-    padding: 10px;
-    width: 600px;
+.about-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(var(--backdrop-blur));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-card);
+}
 
+.about-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
-p{
-    font-size: 20px;
+
+.about-content p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--text-muted);
 }
-.Home{
-    vertical-align: bottom;
-}
-.Segment{
-    vertical-align: bottom;
+
+.icon {
+    color: var(--accent-primary);
 }
