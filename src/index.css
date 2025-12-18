@@ -6,9 +6,9 @@
   --bg-secondary: #10101b;
   --bg-card: rgba(20, 20, 35, 0.6);
   
-  --accent-primary: #00f3ff;   /* Neon Cyan */
-  --accent-secondary: #bd00ff; /* Neon Purple */
-  --accent-glow: rgba(0, 243, 255, 0.5);
+  --accent-primary: #216869;
+  --accent-secondary: #A9ACA9;
+  --accent-glow: rgba(0, 243, 255, 0.59);
 
   --text-main: #ffffff;
   --text-muted: #a0a0b0;

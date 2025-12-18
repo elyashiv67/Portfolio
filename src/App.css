@@ -1,3 +1,4 @@
+
 #root {
     width: 100%;
     min-height: 100vh;
@@ -22,14 +23,14 @@
 }
 
 #root::before {
-    top: -10vw;
-    left: -10vw;
+    top: 10vw;
+    left: 10vw;
     background: var(--accent-primary);
 }
 
 #root::after {
-    bottom: -10vw;
-    right: -10vw;
+    bottom: 10vw;
+    right: 10vw;
     background: var(--accent-secondary);
     animation-delay: -10s;
 }

@@ -15,7 +15,7 @@ function Images({ width = "100%", height = "600px" }) {
     return (
         <div className="images-container">
             <h1 className="gallery-title gradient-text">Gallery</h1>
-            <div className="swiper-container" style={{ width: 300, height: 450 }}> {/* Fixed size for cards effect to look good */}
+            <div className="swiper-container" style={{ width: width, height: height }}> {/* Fixed size for cards effect to look good */}
                 <Swiper
                     effect={'cards'}
                     grabCursor={true}

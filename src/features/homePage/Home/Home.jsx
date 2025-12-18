@@ -12,7 +12,7 @@ function Home() {
                 Welcome to my digital space.
             </p>
             <div className="animate-slide-up delay-2">
-                <NavLink to="/aboutMe" className="btn">Explore Work</NavLink>
+                <NavLink to="/aboutMe" className="btn">More About Me</NavLink>
             </div>
         </div>
     );

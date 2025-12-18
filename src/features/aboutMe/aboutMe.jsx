@@ -1,6 +1,7 @@
 import React from 'react';
 import './aboutMe.modules.css'
 import { HomeRounded, SegmentRounded, } from '@mui/icons-material';
+import LanguageHolder from "./languageHolder/LanguageHolder.jsx";
 
 
 function AboutMe() {
@@ -11,6 +12,11 @@ function AboutMe() {
                 <div className="about-content">
                     <p><HomeRounded className="icon" fontSize="medium" /> I live in Menahamia. I have a diploma in Practical Industrial Management.</p>
                     <p><SegmentRounded className="icon" fontSize="medium" /> My hobbies are sport, coding, and music.</p>
+                </div>
+                <div className={"about-card"}>
+                    <div className={"about-content"}>
+                        <LanguageHolder/>
+                    </div>
                 </div>
             </div>
         </div>
