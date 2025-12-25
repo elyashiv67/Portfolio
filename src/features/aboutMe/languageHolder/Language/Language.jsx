@@ -4,7 +4,7 @@ import './Language.css';
 function Language({name,icon}) {
     return (
         <div className="language-card">
-            <p>{icon}{name}</p>
+            <p style={{cursor:"default"}}>{icon}{name}</p>
         </div>
     );
 }

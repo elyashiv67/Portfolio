@@ -45,3 +45,6 @@
     font-size: 1.5rem;
     color: var(--accent-secondary);
 }
+.language-holder-title{
+    width: 100%;
+}

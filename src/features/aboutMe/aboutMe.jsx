@@ -2,6 +2,7 @@ import React from 'react';
 import './aboutMe.modules.css'
 import { HomeRounded, SegmentRounded, } from '@mui/icons-material';
 import LanguageHolder from "./languageHolder/LanguageHolder.jsx";
+import BtnLink from "../BTN/BTNlink.jsx";
 
 
 function AboutMe() {
@@ -17,6 +18,13 @@ function AboutMe() {
                     <div className={"about-content"}>
                         <LanguageHolder/>
                     </div>
+                </div>
+                <div style={{
+                    display:"flex",
+                    justifyContent:"flex-end",
+                    marginTop:"20px",
+                }}>
+                <BtnLink path={"/images"} innerText={"go to see images"}/>
                 </div>
             </div>
         </div>
